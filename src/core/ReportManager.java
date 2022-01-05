@@ -8,7 +8,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 * The ReportManager class contains  the extent report object and
 * reporter object.
 *
-* @author  Brian Ancliffe
+* @author  Brian Ancliffe 
 * @version 1.0
 * @since   2022-01-04 
 */
@@ -26,7 +26,7 @@ public class ReportManager {
         if (extent == null) {
         	extent = new ExtentReports();  
         	spark = new ExtentSparkReporter(filePath);
-        	spark.config().setTheme(Theme.DARK);
+        	spark.config().setTheme(Theme.STANDARD);
         	spark.config().setDocumentTitle("Brian Ancliffe - Selenium Demo");
     		
     		extent.attachReporter(spark);
